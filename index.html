@@ -12,46 +12,47 @@
     rel="stylesheet">
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header" id="up">
         <div class="container">
             <nav class="header-nav">
                 <a href="/index.html">Главная</a>
-                <a href="intro">Обо мне</a>
-                <a href="portfolio">Портфолио</a>
+                <a href="#intro">Обо мне</a>
+                <a href="#portfolio">Портфолио</a>
                 <a href="#page-header">Контакты</a>
             </nav>
         </div>
     </header>
     
     <main class="page-main">
-        <section class="main-pic" id="up">
+        <section class="main-pic">
             <div class="container">
                 <h1 class="heading">То, что вы хотите увидеть</h1>
                 <p>скрывается перед вами</p>
-                <button name="go_button" type="button"><a href="#intro">Вперед</a></button>
+                <button name="go-button" type="button"><a href="#about_me">Вперед</a></button>
             </div>
         </section>
 
-        <section class="intro">
-            <div class="container">
+        <section class="intro" id="about-me">
+            <div class="container intro-cont">
                 <h2>Обо мне</h2>
                 <p>Мой путь начался в  сентябре 2021 года. Гибкость и замотивированность направляют меня постоянно изучать чего-то новое. Даже не думал, что мне так понравится разработка ПО. Решение небольшой задачи плавно переходит к сотням открытых вкладок и разбору всего функционала. Сторонник системного и критического мышления.
-<p/><p>Весь жизненный путь подводил к разработке: учеба по технической специальности и экономике - работа с цифрами и формулами, работа в сфере продаж и HR-компании - понимать чего хочет обычный пользователь, а работа в юридической организации - грамотно и красиво излагать свои мысли, в том числе и в коде. И в каждой специальности - стремление все систематизировать и автоматизировать.
-О чем со мной можно поговорить:D: автомобили, финансы, психология, инновационные технологии, компьютерная техника, выставочные фотографии.</p>
+                </p>
+                <p>Весь жизненный путь подводил к разработке: учеба по технической специальности и экономике - работа с цифрами и формулами, работа в сфере продаж и HR-компании - понимать чего хочет обычный пользователь, а работа в юридической организации - грамотно и красиво излагать свои мысли, в том числе и в коде. И в каждой специальности - стремление все систематизировать и автоматизировать.
+                О чем со мной можно поговорить:D: автомобили, финансы, психология, инновационные технологии, компьютерная техника, выставочные фотографии.
+                </p>
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2>Реализованные проекты</h2>
                 <ul>
                     <li><a href="https://github.com/gerkules007/Console_Games_CS">КОНСОЛЬНЫЕ ИГРЫ ДЛЯ WINDOWS</a><br> Стек: C#, NET.Framework 4.7</li>
                     <li><a href="https://github.com/gerkules007/BlackJack">Командная разработка консольный игры BlackJack</a><br>
                     Стек: C# 9.0, .NET 6.0</li>
-                    <li><a href="https://github.com/gerkules007/Chat_bot_Sereja">TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telebot)</li>
+                    <li><a href="https://github.com/gerkules007/Chat_bot_Sereja">TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telegram-bot-api)</li>
                     <li>И конечно, эта <a href="#up">страница резюме</a><br>
                     Стек: HTML, CSS</li>
-                    <li></li>
                 </ul>
             </div>
         </section>
@@ -66,11 +67,11 @@
     <footer class="page-footer">
         <div class="container">
           <nav class="header-nav">
-                Моя почта: ovc.semyon@gmail.com
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                
-                <a href="#up">На Главную</a>
+                <a href="tel:+79210927262">Тел:+7(921)092-72-62</a>
+                <a href="mailto:ovc.semyon@gmail.com">Напишите мне на почту :)</a>
+                <a href="https://t.me/ovc_s" title="Я в телеграме"><img src="/source/tg.png" alt="Я в tg" wigth="47" height="47"></a>
+                <a href="https://vk.com/id52066610" title="Я в VK"><img src="/source/vk.png" alt="Я в vk" wigth="50" height="50"></a>
+                <button name="up-button" type="button"><a href="#up">На Главную</a></button>
             </nav>
         </div>
     </footer>
