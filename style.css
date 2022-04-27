@@ -19,7 +19,7 @@ nav {
 
 .intro {
   margin: 0 0;
-  background-image: url("/img/me.jpg");
+  background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
   background-size: cover;
   width: auto;
   height: 1027px;
@@ -52,7 +52,7 @@ header {
 .tutorial{
     margin: 0 0;
     padding: 0 0;
-    background-image: url("/img/original.jpg");
+    background-image: url("https://gerkules007.github.io/Resume/img/original.jpg");
     background-size: cover;
     height: 1027px;
     display: flex;
