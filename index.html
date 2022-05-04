@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Представляю вам портфолио своих работ в виде html-проекта">
     <meta name="keywords" content="портфолио, разработчик, html, css, js, овчаров, овчаров с.м.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://gerkules007.github.io/Resume/style.css">
     <title>Портфолио будущего разработчика</title>
     <link 
     href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,200italic&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
 <body>
-    <header class="page-header" id="up">
-        <div class="container">
+    <header id="up">
+        <div class="page-header">
             <nav class="header-nav">
-                <a href="/index.html">Главная</a>
-                <a href="#intro">Обо мне</a>
+                <a href="index.html" >Главная</a>
+                <a href="#about-me">Обо мне</a>
                 <a href="#portfolio">Портфолио</a>
                 <a href="#page-header">Контакты</a>
             </nav>
@@ -24,56 +23,45 @@
     </header>
     
     <main class="page-main">
-        <section class="main-pic">
-            <div class="container">
-                <h1 class="heading">То, что вы хотите увидеть</h1>
-                <p>скрывается перед вами</p>
-                <button name="go-button" type="button"><a href="#about_me">Вперед</a></button>
+        <div class="tutorial">
+            <div class="main-pic">
+                <h1>То, что вы хотите увидеть</h1>
+                <p style="margin: 50px">скрывается перед вами</p>
+                <button name="go-button" type="button"><a href="#about-me"><em>Вперед!</em></a></button>
             </div>
-        </section>
+        </div>
 
         <section class="intro" id="about-me">
-            <div class="container intro-cont">
+            <div class="intro-cont">
+               <div class="intro-text">
                 <h2>Обо мне</h2>
-                <p>Мой путь начался в  сентябре 2021 года. Гибкость и замотивированность направляют меня постоянно изучать чего-то новое. Даже не думал, что мне так понравится разработка ПО. Решение небольшой задачи плавно переходит к сотням открытых вкладок и разбору всего функционала. Сторонник системного и критического мышления.
-                </p>
-                <p>Весь жизненный путь подводил к разработке: учеба по технической специальности и экономике - работа с цифрами и формулами, работа в сфере продаж и HR-компании - понимать чего хочет обычный пользователь, а работа в юридической организации - грамотно и красиво излагать свои мысли, в том числе и в коде. И в каждой специальности - стремление все систематизировать и автоматизировать.
-                О чем со мной можно поговорить:D: автомобили, финансы, психология, инновационные технологии, компьютерная техника, выставочные фотографии.
-                </p>
+                <p>Мой путь начался в  сентябре 2021 года. Гибкость и замотивированность направляют меня постоянно изучать чего-то новое. Даже не думал, что мне так понравится разработка ПО. Решение небольшой задачи плавно переходит к сотням открытых вкладок и разбору всего функционала. Сторонник системного и критического мышления. <br>Весь жизненный путь подводил к разработке: учеба по технической специальности и экономике - работа с цифрами и формулами, работа в сфере продаж и HR-компании - понимать чего хочет обычный пользователь, а работа в юридической организации - грамотно и красиво излагать свои мысли, в том числе и в коде. И в каждой специальности - стремление все систематизировать и автоматизировать.
+                О чем со мной можно поговорить:D: автомобили, финансы, психология, инновационные технологии, компьютерная техника, выставочные фотографии.</p>
+              </div>
             </div>
         </section>
-
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h2>Реализованные проекты</h2>
+        <section class="portf">
+            <div class="portfolio" id="portfolio">
+                <h2 style="font-size: 36px">Реализованные проекты</h2>
                 <ul>
                     <li><a href="https://github.com/gerkules007/Console_Games_CS">КОНСОЛЬНЫЕ ИГРЫ ДЛЯ WINDOWS</a><br> Стек: C#, NET.Framework 4.7</li>
                     <li><a href="https://github.com/gerkules007/BlackJack">Командная разработка консольный игры BlackJack</a><br>
                     Стек: C# 9.0, .NET 6.0</li>
                     <li><a href="https://github.com/gerkules007/Chat_bot_Sereja">TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telegram-bot-api)</li>
-                    <li>И конечно, эта <a href="#up">страница резюме</a><br>
+                    <li>И конечно, эта <br><a href="#up">страница резюме</a><br>
                     Стек: HTML, CSS</li>
                 </ul>
             </div>
-        </section>
-        
-        <section class="contacts">
-            <div class="container">
-                <h2>Всегда открыт для связи</h2>
-            </div>
-        </section>
+        </section>   
     </main>
     
     <footer class="page-footer">
-        <div class="container">
           <nav class="header-nav">
                 <a href="tel:+79210927262">Тел:+7(921)092-72-62</a>
                 <a href="mailto:ovc.semyon@gmail.com">Напишите мне на почту :)</a>
-                <a href="https://t.me/ovc_s" title="Я в телеграме"><img src="/source/tg.png" alt="Я в tg" wigth="47" height="47"></a>
-                <a href="https://vk.com/id52066610" title="Я в VK"><img src="/source/vk.png" alt="Я в vk" wigth="50" height="50"></a>
-                <button name="up-button" type="button"><a href="#up">На Главную</a></button>
+                <a href="https://t.me/ovc_s" title="Я в телеграме"><img src="https://gerkules007.github.io/Resume/source/tg.png" alt="Я в tg" wigth="47" height="47"></a>
+                <a href="https://vk.com/id52066610" title="Я в VK"><img src="https://gerkules007.github.io/Resume/source/vk.png" alt="Я в vk" wigth="50" height="50"></a>
             </nav>
-        </div>
     </footer>
 </body>
 </html>

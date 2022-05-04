@@ -1,0 +1,131 @@
+body {
+    margin: auto;
+    min-width: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #f2f4f6;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.page-header {
+  padding: 10px 2%;
+}
+
+nav {
+    display: flex;
+}
+
+.intro {
+  margin: 0 0;
+  background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
+  background-size: cover;
+  width: auto;
+  height: 1027px;
+}
+
+.intro-cont {
+  max-width: 35%;
+  margin-left: 100px;
+  padding-top: 200px;
+}
+
+.intro-text{
+    font-size: 1.25em;
+    padding: 20px 35px;
+    background: rgb(0,0,0,0.4);
+    opacity: .70;
+    border-radius: 30px;
+}
+
+header {
+/*
+    border: 3px solid;
+    border-color: white;
+*/
+    background: #222222;
+    text-align: left;
+    opacity: .97;
+}
+
+.tutorial{
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url("https://gerkules007.github.io/Resume/img/original.jpg");
+    background-size: cover;
+    height: 1027px;
+    display: flex;
+    opacity: .95;
+}
+
+.main-pic {
+    margin: auto;
+    color: white;
+    font-size: 250%;
+    text-align: center;
+    padding: 30px;
+    background: rgb(0,0,0,0.3);
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+.portf {
+    padding: 10% 25%;
+}
+
+.portfolio {
+    text-align: center;
+    height: 450px;
+    color: #000000;
+    padding: 5px;
+    background: rgb(120,120,120);
+    opacity: 0.9;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: rgb(10,10,10,0.8);
+}
+
+.portfolio ul {
+    padding: 0;
+    margin: 30px 0;
+}
+.portfolio li {
+    margin:;
+    padding: 15px 0;
+    list-style-type: none;
+    color: aqua;
+}
+
+a {
+    color: white;
+    padding: 0 7%;
+    text-decoration: none;
+}
+
+footer {
+    background: black;
+    text-align: left;
+    padding: 20px;
+}
+
+footer nav {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+button {
+    height: 100px;
+    width: 370px;
+    color: #111111;
+    background: rgb(120,120,120, 0.7);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: white;
+}
+
+button a {
+    color: rgb(250,255,255, 0.9);
+    font-size: 30px;
+    font: "Montserrat", serif;
+}
