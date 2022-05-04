@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Представляю вам портфолио своих работ в виде html-проекта">
     <meta name="keywords" content="портфолио, разработчик, html, css, js, овчаров, овчаров с.м.">
-    <link rel="stylesheet" href="https://gerkules007.github.io/Resume/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Портфолио будущего разработчика</title>
     <link 
     href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,200italic&display=swap&subset=cyrillic"
@@ -18,6 +18,7 @@
                 <a href="#about-me">Обо мне</a>
                 <a href="#portfolio">Портфолио</a>
                 <a href="#page-header">Контакты</a>
+                <a class="login "id="reg-line" href="#" onclick="insertData();">Регистрация</a>
             </nav>
         </div>
     </header>
@@ -27,7 +28,7 @@
             <div class="main-pic">
                 <h1>То, что вы хотите увидеть</h1>
                 <p style="margin: 50px">скрывается перед вами</p>
-                <button name="go-button" type="button"><a href="#about-me"><em>Вперед!</em></a></button>
+                <button id="hello" onclick="replyClick(this.id);"><strong>Вперед!</strong></button>
             </div>
         </div>
 
@@ -44,10 +45,10 @@
             <div class="portfolio" id="portfolio">
                 <h2 style="font-size: 36px">Реализованные проекты</h2>
                 <ul>
-                    <li><a href="https://github.com/gerkules007/Console_Games_CS">КОНСОЛЬНЫЕ ИГРЫ ДЛЯ WINDOWS</a><br> Стек: C#, NET.Framework 4.7</li>
-                    <li><a href="https://github.com/gerkules007/BlackJack">Командная разработка консольный игры BlackJack</a><br>
+                    <li><a href="https://github.com/gerkules007/Console_Games_CS" target="_blank">КОНСОЛЬНЫЕ ИГРЫ ДЛЯ WINDOWS</a><br> Стек: C#, NET.Framework 4.7</li>
+                    <li><a href="https://github.com/gerkules007/BlackJack" target="_blank">Командная разработка консольный игры BlackJack</a><br>
                     Стек: C# 9.0, .NET 6.0</li>
-                    <li><a href="https://github.com/gerkules007/Chat_bot_Sereja">TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telegram-bot-api)</li>
+                    <li><a href="https://github.com/gerkules007/Chat_bot_Sereja" target: _blank>TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telegram-bot-api)</li>
                     <li>И конечно, эта <br><a href="#up">страница резюме</a><br>
                     Стек: HTML, CSS</li>
                 </ul>
@@ -63,5 +64,16 @@
                 <a href="https://vk.com/id52066610" title="Я в VK"><img src="https://gerkules007.github.io/Resume/source/vk.png" alt="Я в vk" wigth="50" height="50"></a>
             </nav>
     </footer>
+    <script type="text/javascript">             
+        function replyClick(butID) {
+            alert(butID);
+        }
+        
+//        document.querySelector("#math-button").onclick = 
+        function insertData() {
+            let input = window.prompt("Введите свое имя");
+            document.getElementById("reg-line").innerHTML = 'Здравствуйте, ' + (input == null || input == ''? 'User': input);
+        }
+    </script>
 </body>
 </html>
