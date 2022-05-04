@@ -32,7 +32,7 @@ nav {
 }
 
 .intro-text{
-    font-size: 1.25em;
+    font-size: 1.15vw;
     padding: 20px 35px;
     background: rgb(0,0,0,0.4);
     opacity: .70;
@@ -114,7 +114,7 @@ footer nav {
     vertical-align: bottom;
 }
 
-button {
+button, math-button {
     height: 100px;
     width: 370px;
     color: #111111;
@@ -122,10 +122,17 @@ button {
     border-radius: 10px;
     border: 3px solid;
     border-color: white;
+    text-transform: uppercase;
+    margin: auto;
 }
 
 button a {
     color: rgb(250,255,255, 0.9);
     font-size: 30px;
     font: "Montserrat", serif;
+}
+
+.button-math {
+    padding-top: 20px;
+    text-align: center;
 }
