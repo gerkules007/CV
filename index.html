@@ -6,21 +6,20 @@
     <meta name="keywords" content="портфолио, разработчик, html, css, js, овчаров, овчаров с.м.">
     <link rel="stylesheet" href="style.css">
     <title>Портфолио будущего разработчика</title>
-    <link 
+    <!-- TODO add mini_logo for tab-->
+    <link
     href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,200italic&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
 <body>
     <header id="up">
-        <div class="page-header">
-            <nav class="header-nav">
-                <a href="index.html" >Главная</a>
-                <a href="#about-me">Обо мне</a>
-                <a href="#portfolio">Портфолио</a>
-                <a>Контакты</a>
-                <a class="login" id="reg-line" href="#" onclick="insertData();">Регистрация</a>
-            </nav>
-        </div>
+        <nav class="header-nav">
+            <a href="index.html" >Главная</a>
+            <a href="#about-me">Обо мне</a>
+            <a href="#portfolio">Портфолио</a>
+            <a>Контакты</a>
+            <a class="login" id="reg-line" href="#" onclick="insertData();">Регистрация</a>
+        </nav>
     </header>
     
     <main class="page-main">
@@ -57,7 +56,7 @@
     </main>
     
     <footer class="page-footer">
-          <nav class="header-nav">
+          <nav class="footer-nav">
                 <a href="tel:+79210927262">Тел:+7(921)092-72-62</a>
                 <a href="mailto:ovc.semyon@gmail.com">Напишите мне на почту :)</a>
                 <a href="https://t.me/ovc_s" title="Я в телеграме"><img src="https://gerkules007.github.io/Resume/source/tg.png" alt="Я в tg" width="47" height="47"></a>
@@ -68,8 +67,7 @@
         function replyClick(butID) {
             alert(butID);
         }
-        
-//        document.querySelector("#math-button").onclick = 
+
         function insertData() {
             let input = window.prompt("Введите свое имя");
             document.getElementById("reg-line").innerHTML = 'Здравствуйте, ' + (input === null || input === ''? 'User': input);
