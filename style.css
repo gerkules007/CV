@@ -9,12 +9,16 @@ body {
     background-position: top center;
 }
 
-.header-nav {
-    padding: 10px 5px;
+nav {
+    display: flex;
 }
 
-.header-nav a {
+nav a {
     padding: 10px 15px;
+}
+
+.header-nav {
+    padding: 10px 5px;
 }
 
 .login {
@@ -22,16 +26,12 @@ body {
     right: 10px;
 }
 
-nav {
-    display: flex;
-}
-
 .intro {
-  margin: 0 0;
-  background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
-  background-size: cover;
-  width: auto;
-  height: 1027px;
+    margin: 0 0;
+    background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
+    background-size: cover;
+    width: auto;
+    height: 1027px;
 }
 
 .intro-cont {
@@ -49,10 +49,6 @@ nav {
 }
 
 header {
-/*
-    border: 3px solid;
-    border-color: white;
-*/
     background: #222222;
     text-align: left;
     opacity: .97;
@@ -107,7 +103,6 @@ header {
 
 a {
     color: white;
-
     text-decoration: none;
 }
 

@@ -27,7 +27,8 @@
             <div class="main-pic">
                 <h1>То, что вы хотите увидеть</h1>
                 <p style="margin: 50px">скрывается перед вами</p>
-                <button id="hello" onclick="replyClick(this.id);"><strong>Вперед!</strong></button>
+                <!--replyClick(this.id);-->
+                <button id="hello" onclick="" ><strong>Вперед!</strong></button>
             </div>
         </div>
 
@@ -64,10 +65,9 @@
             </nav>
     </footer>
     <script type="text/javascript">             
-        function replyClick(butID) {
-            alert(butID);
-        }
-
+        // function replyClick(butID) {
+        //     alert(butID);
+        // }
         function insertData() {
             let input = window.prompt("Введите свое имя");
             document.getElementById("reg-line").innerHTML = 'Здравствуйте, ' + (input === null || input === ''? 'User': input);
