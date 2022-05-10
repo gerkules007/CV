@@ -9,9 +9,16 @@ body {
     background-position: top center;
 }
 
-.page-header {
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 10px 15px;
+}
+
+.header-nav {
     padding: 10px 5px;
-    
 }
 
 .login {
@@ -19,16 +26,12 @@ body {
     right: 10px;
 }
 
-nav {
-    display: flex;
-}
-
 .intro {
-  margin: 0 0;
-  background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
-  background-size: cover;
-  width: auto;
-  height: 1027px;
+    margin: 0 0;
+    background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
+    background-size: cover;
+    width: auto;
+    height: 1027px;
 }
 
 .intro-cont {
@@ -46,10 +49,6 @@ nav {
 }
 
 header {
-/*
-    border: 3px solid;
-    border-color: white;
-*/
     background: #222222;
     text-align: left;
     opacity: .97;
@@ -88,16 +87,15 @@ header {
     background: rgb(120,120,120);
     opacity: 0.9;
     border-radius: 10px;
-    border: 3px solid;
-    border-color: rgb(10,10,10,0.8);
+    border: 3px solid rgb(10,10,10,0.8);
 }
 
 .portfolio ul {
     padding: 0;
     margin: 30px 0;
 }
+
 .portfolio li {
-    margin:;
     padding: 15px 0;
     list-style-type: none;
     color: aqua;
@@ -105,7 +103,6 @@ header {
 
 a {
     color: white;
-    padding: 0 7%;
     text-decoration: none;
 }
 
@@ -115,27 +112,28 @@ footer {
     padding: 20px;
 }
 
-footer nav {
+.footer-nav {
     text-align: center;
     vertical-align: bottom;
 }
 
-button {
+#tutorial-up {
     height: 100px;
     width: 370px;
-    color: #fff;
+    margin: auto;
     background: rgb(120,120,120, 0.7);
     border-radius: 10px;
-    border: 3px solid;
-    border-color: white;
+    border: 3px solid white;
+    font-size: 0.8em;
+    color: rgb(250,255,255, 0.9);
     text-transform: uppercase;
-    margin: auto;
-    font-size: 0.65em;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    vertical-align: center;
 }
 
-button a {
-    color: rgb(250,255,255, 0.9);
-    font-size: 30px;
-    font: "Montserrat", serif;
+button {
+    cursor: pointer;
 }
+
 

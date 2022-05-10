@@ -6,21 +6,20 @@
     <meta name="keywords" content="портфолио, разработчик, html, css, js, овчаров, овчаров с.м.">
     <link rel="stylesheet" href="style.css">
     <title>Портфолио будущего разработчика</title>
-    <link 
+    <!-- TODO add mini_logo for tab-->
+    <link
     href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,200italic&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
 <body>
     <header id="up">
-        <div class="page-header">
-            <nav class="header-nav">
-                <a href="index.html" >Главная</a>
-                <a href="#about-me">Обо мне</a>
-                <a href="#portfolio">Портфолио</a>
-                <a href="#page-header">Контакты</a>
-                <a class="login "id="reg-line" href="#" onclick="insertData();">Регистрация</a>
-            </nav>
-        </div>
+        <nav class="header-nav">
+            <a href="index.html" >Главная</a>
+            <a href="#about-me">Обо мне</a>
+            <a href="#portfolio">Портфолио</a>
+            <a>Контакты</a>
+            <a class="login" id="reg-line" href="#" onclick="insertData();">Регистрация</a>
+        </nav>
     </header>
     
     <main class="page-main">
@@ -28,7 +27,8 @@
             <div class="main-pic">
                 <h1>То, что вы хотите увидеть</h1>
                 <p style="margin: 50px">скрывается перед вами</p>
-                <button id="hello" onclick="replyClick(this.id);"><strong>Вперед!</strong></button>
+                <!--replyClick(this.id);-->
+                <button id="tutorial-up" type="button" onclick="window.location.href = '#about-me';"><strong>Вперед!</strong></button>
             </div>
         </div>
 
@@ -48,7 +48,7 @@
                     <li><a href="https://github.com/gerkules007/Console_Games_CS" target="_blank">КОНСОЛЬНЫЕ ИГРЫ ДЛЯ WINDOWS</a><br> Стек: C#, NET.Framework 4.7</li>
                     <li><a href="https://github.com/gerkules007/BlackJack" target="_blank">Командная разработка консольный игры BlackJack</a><br>
                     Стек: C# 9.0, .NET 6.0</li>
-                    <li><a href="https://github.com/gerkules007/Chat_bot_Sereja" target: _blank>TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telegram-bot-api)</li>
+                    <li><a href="https://github.com/gerkules007/Chat_bot_Sereja" target="_blank">TELEGRAM BOT</a><br>Стек: Python 3, Telegram-API (telegram-bot-api)</li>
                     <li>И конечно, эта <br><a href="#up">страница резюме</a><br>
                     Стек: HTML, CSS</li>
                 </ul>
@@ -57,22 +57,20 @@
     </main>
     
     <footer class="page-footer">
-          <nav class="header-nav">
+          <nav class="footer-nav">
                 <a href="tel:+79210927262">Тел:+7(921)092-72-62</a>
                 <a href="mailto:ovc.semyon@gmail.com">Напишите мне на почту :)</a>
-                <a href="https://t.me/ovc_s" title="Я в телеграме"><img src="https://gerkules007.github.io/Resume/source/tg.png" alt="Я в tg" wigth="47" height="47"></a>
-                <a href="https://vk.com/id52066610" title="Я в VK"><img src="https://gerkules007.github.io/Resume/source/vk.png" alt="Я в vk" wigth="50" height="50"></a>
+                <a href="https://t.me/ovc_s" title="Я в телеграме"><img src="https://gerkules007.github.io/Resume/source/tg.png" alt="Я в tg" width="47" height="47"></a>
+                <a href="https://vk.com/id52066610" title="Я в VK"><img src="https://gerkules007.github.io/Resume/source/vk.png" alt="Я в vk" width="50" height="50"></a>
             </nav>
     </footer>
     <script type="text/javascript">             
-        function replyClick(butID) {
-            alert(butID);
-        }
-        
-//        document.querySelector("#math-button").onclick = 
+        // function replyClick(butID) {
+        //     alert(butID);
+        // }
         function insertData() {
             let input = window.prompt("Введите свое имя");
-            document.getElementById("reg-line").innerHTML = 'Здравствуйте, ' + (input == null || input == ''? 'User': input);
+            document.getElementById("reg-line").innerHTML = 'Здравствуйте, ' + (input === null || input === ''? 'User': input);
         }
     </script>
 </body>
