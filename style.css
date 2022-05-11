@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: auto;
     min-width: auto;
@@ -127,7 +131,7 @@ footer {
     font-size: 0.8em;
     color: rgb(250,255,255, 0.9);
     text-transform: uppercase;
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     vertical-align: center;
 }
