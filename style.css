@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: auto;
     min-width: auto;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #ffffff;
     background-color: #f2f4f6;
@@ -29,23 +33,25 @@ nav a {
 .intro {
     margin: 0 0;
     background-image: url("https://gerkules007.github.io/Resume/img/me.jpg");
-    background-size: cover;
+    background-size: 125%;
     width: auto;
-    height: 1027px;
+    height: 800px;
+    background-position: top -120px left -120px;
 }
 
 .intro-cont {
   max-width: 35%;
   margin-left: 100px;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
+/*TODO сделать от левого края*/
 .intro-text{
     font-size: 1.15vw;
     padding: 20px 35px;
-    background: rgb(0,0,0,0.4);
+    background: rgb(0,0,0,0.5);
     opacity: .70;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 header {
@@ -57,22 +63,30 @@ header {
 .tutorial{
     margin: 0 0;
     padding: 0 0;
-    background-image: url("https://gerkules007.github.io/Resume/img/original.jpg");
-    background-size: cover;
-    height: 1027px;
+    background-size: 100%;
+    background: url("https://gerkules007.github.io/Resume/img/original.jpg") top 0 left 0;
+    height: 768px;
     display: flex;
     opacity: .95;
 }
 
-.main-pic {
-    margin: auto;
+.main-box {
+    margin: 180px auto 0 auto;
     color: white;
     font-size: 250%;
     text-align: center;
-    padding: 30px;
-    background: rgb(0,0,0,0.3);
+    padding: 5px 30px;
     opacity: 0.9;
-    border-radius: 30px;
+    text-shadow: black;
+}
+
+.main-text-h1 {
+    margin: 15px;
+}
+
+.main-text-p {
+    margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 .portf {
@@ -101,6 +115,7 @@ header {
     color: aqua;
 }
 
+/* TODO при наведении подсвечивались*/
 a {
     color: white;
     text-decoration: none;
@@ -117,17 +132,17 @@ footer {
     vertical-align: bottom;
 }
 
-#tutorial-up {
-    height: 100px;
-    width: 370px;
+#tutorial-button {
+    height: 2em;
+    width: 7em;
     margin: auto;
     background: rgb(120,120,120, 0.7);
-    border-radius: 10px;
+    border-radius: 20px;
     border: 3px solid white;
-    font-size: 0.8em;
+    font-size: 32px;
     color: rgb(250,255,255, 0.9);
     text-transform: uppercase;
-    font-family: "Montserrat", serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     vertical-align: center;
 }
